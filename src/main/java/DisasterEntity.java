@@ -21,4 +21,7 @@ public class DisasterEntity {
     @Column(name = "type")
     private String type;
 
+    @OneToOne(mappedBy = "disasterEntity")
+    private OccurrenceEntity occurrenceEntity;
+
 }

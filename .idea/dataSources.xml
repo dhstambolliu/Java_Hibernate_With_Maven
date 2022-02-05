@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://192.168.68.240:3306/hibernatewithmaven</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="hibernatewithmaven@192.168.1.130" uuid="d5b52aed-469d-4d46-85af-e1d002fc83d9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.1.130:3306/hibernatewithmaven</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
