@@ -1,6 +1,4 @@
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -8,8 +6,8 @@ import javax.persistence.*;
 @Table(name = "affectedareas")
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-
+@Getter
+@Setter
 public class AffectedAreasEntity {
     @Id
     @Column(name = "id", nullable = false)
@@ -20,7 +18,7 @@ public class AffectedAreasEntity {
     private String name;
 
     @Column(name = "casualties")
-    private String casualties;
+    private int casualties;
 
     @Column(name = "fatalities")
     private String fatalities;

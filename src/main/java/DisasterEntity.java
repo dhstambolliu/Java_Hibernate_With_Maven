@@ -1,6 +1,4 @@
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -8,7 +6,8 @@ import javax.persistence.*;
 @Table(name = "disaster")
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 
 public class DisasterEntity {
     @Id

@@ -28,5 +28,10 @@ public class Main {
 //        OccurrenceEntity findByDisasterName = disasterRepository.findByDisasterName("Earthquake");
 //
 //        System.out.println("Find disasters by name is: " + findByDisasterName.getPlace());
+        AffectedAreasRepository affectedAreasRepository = new AffectedAreasRepository(entityManager);
+
+
+        System.out.println(affectedAreasRepository.findDisasterPlace(1));
+
     }
 }
