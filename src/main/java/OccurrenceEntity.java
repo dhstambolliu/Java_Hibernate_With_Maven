@@ -3,6 +3,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "occurrence")
@@ -23,7 +24,10 @@ public class OccurrenceEntity {
     @Column(name = "place")
     private String place;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "disaster_id")
     private DisasterEntity disasterEntity;
+
+    @OneToMany(mappedBy = "occurrenceEntity")
+    private List<AffectedAreasEntity> affectedAreasEntityList;
 }

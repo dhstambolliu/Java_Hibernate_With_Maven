@@ -1,4 +1,5 @@
 import javax.persistence.EntityManager;
+import java.util.List;
 
 public class OccurrenceRepository {
     private final EntityManager entityManager;
@@ -21,5 +22,10 @@ public class OccurrenceRepository {
                 .setParameter("occurrenceYear", occurrenceYear).getSingleResult();
     }
 
+    public List<OccurrenceEntity> findByAffectedAreas(Integer casualties) {
+
+
+        return null;
+    }
 
 }

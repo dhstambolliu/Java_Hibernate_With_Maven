@@ -15,6 +15,7 @@
 
         <mapping class="DisasterEntity"/>
         <mapping class="OccurrenceEntity"/>
+        <mapping class="AffectedAreasEntity"/>
 
 
     </session-factory>
